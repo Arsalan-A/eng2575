@@ -1,0 +1,89 @@
+
+:target::before {
+    content: "";
+    display: block;
+    height: 350px;
+}
+
+/* Navbar Section */
+#nav-bar {
+    display: flex;
+    flex-direction: column;
+    border-bottom: none;
+}
+
+#nav-bar ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#nav-bar ul li {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px dotted #333;
+    padding: 0;
+}
+
+#nav-bar ul li a {
+    display: block;
+    width: 100%;
+}
+
+.logo {
+    font-size: 1.2rem;
+}
+
+.logo span {
+    font-size: 1.5rem;
+}
+
+/* SHOWCASE */
+#showcase .container {
+    padding-top: 400px;
+}
+
+#showcase h2 {
+    font-size: 1.5rem;
+}
+
+/* FEATURE SECTION */
+#items {
+    padding: 0.75rem;
+}
+#items .item i {
+    display: none;
+}
+
+#items .item .item-content {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+/* image */
+#how {
+    margin-top: 3rem;
+   
+}
+
+#how img {
+    max-width: 100%;
+}
+
+/* Pricing Section */
+#boxes {
+    flex-direction: column;
+    align-items: center;
+}
+
+#boxes .box {
+    max-width: 300px;
+    margin-bottom: 0;
+}
+
+/* h1 size */
+#how h1,
+#features h1,
+#pricing h1 {
+    font-size: 1.5rem;
+}

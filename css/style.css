@@ -1,0 +1,258 @@
+/* Primary colors */
+:root {
+    --primary-color: rgb(68,114,196);
+    --showcase-color: rgba(0,0,0,0.5);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    line-height: 1.5;
+}
+/* Utility Classes */
+.p-1 {
+    padding: 1rem 0;
+}
+
+:target::before {
+    content: "";
+    display: block;
+    height: 150px;
+}
+
+body {
+    background: #eeeeee;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Navbar */
+#nav-bar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #dddddd;
+    border-bottom: 1px solid #333;
+    z-index: 1;
+} 
+
+.logo {
+   max-width: 300px;
+   font-weight: bold;
+   font-size: 1.5rem;
+   margin-left: 2rem;
+   padding: 0.75rem;
+   text-align: center;
+}
+
+.logo span {
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+    color: var(--primary-color)
+}
+
+#nav-bar ul {
+    display: flex;
+    /* To Make navbar links expandable */
+    /*
+    width: 50%;
+    justify-content: space-around; */
+    align-items: center;
+    list-style: none;
+}
+
+
+#nav-bar ul li a {
+    padding: 1.4rem;
+}
+
+#nav-bar ul li a:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+
+/* SHOWCASE SECTION*/
+
+#showcase {
+    background: var(--showcase-color);
+    text-align: center;
+    height: 100vh;
+}
+
+#showcase .container {
+    max-width: 1080px;
+    margin: auto;
+    padding-top: 500px;
+}
+
+#showcase:before {
+    content: '';
+    background: url('../img/showcase.png') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+}
+
+#showcase h2 {
+    font-size: 2rem;
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 18px;
+    color: white;
+    background: var(--primary-color);
+    padding: 13px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: rgb(52,102,212);
+}
+
+
+/* FEATURE SECTION */
+#features h1{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--primary-color)
+}
+
+#items {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+#items .item {
+   display: flex;
+   align-items: center;
+}
+
+#items .item i {
+    color: var(--primary-color); 
+    font-size: 2.5rem;
+    width: 50px;
+    margin-right: 3.5rem;
+    padding: 3rem 3rem 3rem 1.5rem;
+}
+
+/* Image Section */
+#how {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+#how h1 {
+    color: var(--primary-color);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#how img {
+    max-width: 100%;
+}
+
+/* Pricing Section */
+#pricing h1{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--primary-color)
+}
+#boxes {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+
+#boxes .box {
+    border: 1px solid #333;
+    margin: 1rem .75rem; 
+    width: 400px;
+}
+
+#boxes .box .box-heading {
+    text-align: center;
+    background: #dddddd;
+    padding: 1rem 2.5rem;
+}
+
+#boxes .box .price {
+    text-align: center;
+    padding: 1rem;
+}
+
+#boxes .box ul {
+    margin-bottom: 2rem;
+}
+
+#boxes .box li {
+    list-style: none;
+    text-align: center;
+}
+
+#boxes .box .btn {
+    display: block;
+    color: white;
+    font-size: 1.2rem;
+    margin: 1rem auto;
+    background: var(--primary-color);
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+/* footer */
+footer {
+    background: #dddddd;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    padding: 0.75rem 1rem 0;
+}
+
+footer ul li {
+    font-size: 1.1rem;
+    margin-right: 1rem;
+}
+footer p {
+    text-align: right;
+    color: #333;
+    margin-right: 1.5rem;
+    padding: 0rem 1rem 1rem 1rem;
+}
+
